@@ -1,0 +1,274 @@
+@charset "UTF-8";
+/*!
+Theme Name: Soisson Game Show Theme
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: soissons-game-show
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+soissons-game-show is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+/* Normalize
+--------------------------------------------- */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* Ici se sera les police d'écriture */
+@font-face {
+  font-family: "Monsterrat";
+  src: url("./client/res/Montserrat/static/Montserrat-Light.ttf");
+}
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  background: radial-gradient(100% 197.75% at 0% 100%, #1D2D3D 0%, #1A0530 100%);
+  /* Ici se sera les variable CSS */
+  --sg-font-default: "Monsterrat";
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(59.97% 13.95% at 81.49% 4.52%, rgba(171, 44, 182, 0.4) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(52.08% 12.04% at 73.61% 28.85%, rgba(182, 44, 118, 0.25) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(72.95% 18.8% at 28.65% 20.02%, rgba(44, 49, 182, 0.4) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(68.51% 17.66% at 60.69% 45.18%, rgba(182, 44, 143, 0.2) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(144.55% 22.06% at 19.1% 81.22%, rgba(171, 44, 182, 0.3) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(50% 12.91% at 63.4% 67.31%, rgba(88, 44, 182, 0.2) 0%, rgba(54, 60, 58, 0) 100%);
+  color: #F6F6F6;
+  font-family: "Monsterrat";
+  font-size: 16px;
+}
+body h1, body p, body h2 {
+  margin: 0;
+  padding: 0;
+}
+body button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+body .color-illust-tile-red {
+  color: #ED4621;
+}
+body header .content-header {
+  display: flex;
+}
+body header .title {
+  font-family: var(--sg-font-default, "Monsterrat");
+  color: #F6F6F6;
+  font-weight: 600;
+  letter-spacing: 3%;
+  font-size: 26px;
+}
+body header .button-nav-menu {
+  width: 57px;
+  border-radius: 30px;
+  height: max-content;
+  transition: 0.2s;
+}
+body header .button-nav-menu:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+body header .bar-button-burger {
+  width: 40px;
+  height: 5px;
+  background: #F6F6F6;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* Merci à Boostrap pour ces valeurs précise pour les breakpoint */
+@media screen and (min-width: 0) {
+  .content-button-nav-menu {
+    margin: auto 16px auto auto;
+  }
+  .content-logo {
+    margin: auto 7px auto 16px;
+  }
+  .content-title {
+    display: none;
+  }
+  .content-header-image {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    z-index: -1;
+  }
+  .header-image {
+    filter: brightness(50%);
+    width: 541px;
+    height: 466px;
+  }
+  .content-intro {
+    padding: 104px 0 0 0;
+  }
+  .content-title-paragraphe {
+    padding: 0 0 75px 0;
+    width: 319px;
+    margin: auto;
+  }
+  .title-paragraphe {
+    margin: auto;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 3%;
+  }
+  .content-paragraphe-intro {
+    max-width: 319px;
+    margin: auto;
+  }
+  .content-button-secton-main {
+    padding: 120px 0 0 0;
+    display: flex;
+  }
+  .button-section-main {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid #F6F6F6;
+    margin: auto;
+    display: flex;
+    transition: 0.2s;
+  }
+  .button-section-main:hover {
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+  }
+  .vector-arrow {
+    transform: rotate(180deg);
+    margin: auto;
+    fill: #F6F6F6;
+    height: 25px;
+  }
+  .content-main {
+    padding: 135px 0 0 0;
+  }
+  .content-title-main-section {
+    max-width: 270px;
+    margin: auto;
+  }
+  .title-main-section {
+    text-align: center;
+    font-size: 22px;
+  }
+  .content-section-main-one {
+    padding: 128px 0 0 0;
+  }
+  .content-title-section-one {
+    padding: 25.17px 0 0 0;
+    max-width: 319px;
+    margin: auto;
+  }
+  .separe-paragraphe-section-one {
+    width: 75px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #ED4621;
+    margin: 18px 0 0 0;
+  }
+  .content-paragraphe-section-one-main {
+    padding: 31px 0 0 0;
+    max-width: 319px;
+    margin: auto;
+  }
+  .content-image-section-one {
+    height: 559.39px;
+    position: relative;
+  }
+  .image-section-one {
+    position: absolute;
+    left: -100px;
+  }
+  .content-section-image-one {
+    width: 450px;
+    height: 405px;
+    padding: 40px 0 0 0;
+    position: relative;
+  }
+  .content-image-section-second-illust-one, .content-image-section-second-illust-second,
+.content-image-section-second {
+    position: absolute;
+    right: -150px;
+  }
+  .content-image-section-second-illust-one {
+    top: 20px;
+    right: -200px;
+  }
+  .content-image-section-second-illust-second {
+    top: 70px;
+    right: -100px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .content-title {
+    margin: auto auto auto 7px;
+  }
+  .content-header-image {
+    right: -100px;
+  }
+  .header-image {
+    width: 682px;
+    height: 520px;
+    filter: brightness(70%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-title {
+    display: block;
+  }
+  .content-logo {
+    margin: auto 7px auto 60px;
+  }
+  .content-button-nav-menu {
+    margin: auto 60px auto auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

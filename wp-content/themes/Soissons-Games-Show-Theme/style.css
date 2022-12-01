@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/* Theme Name : Soissons Game Show */
+/* Ici sera déclarer les police d'écriture */
+@font-face {
+  font-family: "Montserrat";
+  src: url("./client/res/font/Montserrat/static/Montserrat-Light.ttf");
+}
+html {
+  scroll-behavior: smooth;
+  background: radial-gradient(100% 197.75% at 0% 100%, #1D2D3D 0%, #1A0530 100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(59.97% 13.95% at 81.49% 4.52%, rgba(171, 44, 182, 0.4) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(52.08% 12.04% at 73.61% 28.85%, rgba(182, 44, 118, 0.25) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(72.95% 18.8% at 28.65% 20.02%, rgba(44, 49, 182, 0.4) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(68.51% 17.66% at 60.69% 45.18%, rgba(182, 44, 143, 0.2) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(144.55% 22.06% at 19.1% 81.22%, rgba(171, 44, 182, 0.3) 0%, rgba(54, 60, 58, 0) 100%), radial-gradient(50% 12.91% at 63.4% 67.31%, rgba(88, 44, 182, 0.2) 0%, rgba(54, 60, 58, 0) 100%);
+  height: 5899px;
+  overflow-x: hidden;
+}
+body header .content-header-nav-bar {
+  display: flex;
+}
+body header .content-title {
+  margin: auto auto auto 10px;
+}
+body header .title {
+  color: #F6F6F6;
+  margin: auto;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 3%;
+}
+body header .button-nav-menu {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: 0.2s;
+  width: 60px;
+  height: 60px;
+}
+body header .button-nav-menu:hover {
+  transition: 0.2s;
+  background: rgba(255, 255, 255, 0.4);
+}
+body header .bar-button {
+  width: 40px;
+  height: 5px;
+  background: #F6F6F6;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+body header .content-image-header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+/* Voici le responsive */
+@media screen and (min-width: 0) {
+  .content-logo {
+    margin: auto 10px auto 25px;
+  }
+  .content-button-nav-menu {
+    margin: auto 25px auto auto;
+  }
+  .content-title {
+    display: none;
+  }
+  .content-image-header {
+    width: 541px;
+    height: 466px;
+    right: -41px;
+    filter: brightness(50%);
+  }
+}
+@media screen and (min-width: 768px) {
+  .content-button-nav-menu {
+    margin: auto 50px auto auto;
+  }
+  .content-title {
+    display: flex;
+  }
+  .content-image-header {
+    width: 600px;
+    height: 500px;
+    right: -30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-logo {
+    margin: auto 13.51px auto 200px;
+  }
+  .content-button-nav-menu {
+    margin: auto 200px auto auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
