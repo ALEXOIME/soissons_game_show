@@ -22,6 +22,9 @@
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 	<header id="masthead" class="site-header">
+		<div class="content-menu-section">
+	
+		</div>
 		<div class="content-header">
 			<div class="content-logo">
 				<img src="<?php echo get_field('logo') ?>">
@@ -49,6 +52,7 @@
 			<div class="content-title-paragraphe">
 				<h2 class="title-paragraphe"><?php echo get_field('title_parag_intro') ?><span class="color-illust-tile-red"><?php echo get_field('title_parag_intro_span') ?></span></h2>
 			</div>
+			<div class="content-separe-title-paragraphe"></div>
 			<div class="content-paragraphe-intro">
 				<p class="parag_intro"><?php echo get_field('parag_header') ?></p>
 			</div>

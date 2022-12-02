@@ -12,8 +12,9 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-
+		<div class="content-footer">
+			<div class="content-contact">
+			</div>
 		</div>
 	</footer>
 </div>

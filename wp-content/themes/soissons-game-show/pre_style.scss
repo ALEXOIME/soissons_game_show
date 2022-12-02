@@ -118,7 +118,13 @@ body {
 	}
 
 	header{
-	
+
+		.content-menu-section{
+
+			position: absolute;
+			top: 0;
+
+		}
 
 		.content-header{
 
@@ -159,6 +165,23 @@ body {
 			background: #F6F6F6;
 			margin: 10px auto;
 			border-radius: 5px;
+
+		}
+
+		.image-section-second{
+
+			position: absolute;
+
+		}
+
+	}
+
+	footer{
+
+		.content-footer{
+
+			height: 300px;
+			background: radial-gradient(137.6% 339.12% at 0% 100%, #ED4621 0%, #A21368 100%);
 
 		}
 
@@ -214,7 +237,7 @@ body {
 	.content-title-paragraphe{
 
 		padding: 0 0 75px 0;
-		width: 319px;
+		max-width: 319px;
 		margin: auto;
 
 	}
@@ -222,7 +245,6 @@ body {
 	.title-paragraphe{
 
 		margin: auto;
-		font-size: 24px;
 		font-weight: 600;
 		letter-spacing: 3%;
 
@@ -326,7 +348,7 @@ body {
 
 	.content-image-section-one{
 
-		height: 559.39px;
+		height: 378.83px;
 		position: relative;
 
 	}
@@ -335,23 +357,17 @@ body {
 
 		position: absolute;
 		left: -100px;
+		width: 400px;
+		padding: 0 100% 0 0;
 
 	}
 
 	.content-section-image-one{
 
 		width: 450px;
-		height: 405px;
+		height: 400px;
 		padding: 40px 0 0 0;
 		position: relative;
-
-	}
-
-	.content-image-section-second-illust-one, .content-image-section-second-illust-second,
-	.content-image-section-second{
-
-		position: absolute;
-		right: -150px;
 
 	}
 
@@ -366,6 +382,41 @@ body {
 
 		top: 70px;
 		right: -100px;
+
+	}
+
+	.image-section-second{
+
+		position: absolute;
+		right: -100px;
+
+	}
+
+	.content-image-section-second{
+
+		position: relative;
+		height: 400px;
+
+	}
+
+	.content-section-main-second{
+
+		padding: 20px 0 0 0;
+
+	}
+
+	.content-title-section-two{
+
+		width: 319px;
+		margin: auto;
+
+	}
+
+	.content-paragraphe-section-second-main{
+
+		max-width: 319px;
+		margin: auto;
+		padding: 44px 0 0 0;
 
 	}
 
@@ -384,18 +435,68 @@ body {
 		right: -100px;
 
 	}
-
-	.header-image{
-
-		width: 682px;
-		height: 520px;
-		filter: brightness(70%);
-
-	}
 	
 }
 
 @media screen and (min-width: 768px) {
+
+	h2{
+
+		font-size: 32px;
+
+	}
+
+	h3{
+
+		font-size: 28px;
+		
+	}
+
+	p{
+
+		font-size: 20px;
+
+	}
+
+	.content-section-paragraphe-img-main-one{
+
+		display: flex;
+		margin: auto;
+
+	}
+
+	.content-title-paragraphe{
+
+		max-width: 500px;
+		margin: auto auto auto 176px;
+		padding: 0;
+
+	}
+
+	.content-separe-title-paragraphe{
+
+		width: 75px;
+		height: 5px;
+		background: #ED4621;
+		margin: auto auto auto 176px;
+
+	}
+
+	.content-separe-title-paragraphe{
+
+		background: #ED4621;
+		margin: 7px auto 36px 176px;
+		display: block;
+		width: 75px;
+
+	}
+
+	.content-paragraphe-intro{
+
+		max-width: 500px;
+		margin: auto auto auto 176px;
+
+	}
 
 	.content-title{
 
@@ -409,11 +510,153 @@ body {
 
 	}
 
+	.content-title-main-section{
+
+		max-width: 500px;
+
+	}
+
+	.title-main-section{
+
+		font-size: 24px;
+
+	}
+
 	.content-button-nav-menu{
 
 		margin: auto 60px auto auto;
 
 	}
+
+	.content-button-secton-main{
+
+		display: none;
+
+	}
+
+	.header-image{
+
+		width: 500px;
+		height: 400px;
+		filter: brightness(100%);
+
+	}
+
+	.content-image-section-one{
+
+		width: 600px;
+		height: 550px;
+		margin: auto 75px auto auto;
+
+	}
+
+	.image-section-one{
+
+		width: 600px;
+		padding: 0;
+
+	}
+
+	.content-title-section-one{
+
+		max-width: 400px;
+		margin: auto auto auto 75px;
+
+	}
+	
+	.content-paragraphe-section-one-main{
+
+		max-width: 400px;
+
+	}
+
+	.content-paragraphe-section-second-main{
+
+		max-width: 400px;
+
+	}
+
+	.content-title-section-two{
+
+		width: fit-content;
+
+	}
+
+	.content-image-section-two{
+
+		width: 400px;
+		height: 400px;
+
+	}
+
+	.image-section-second{
+
+		left: 0;
+
+	}
+
+	.content-section-main-second{
+
+		display: flex;
+
+	}
 	
 }
 
+
+
+@media screen and(min-width: 1200px) {
+
+	h2{
+
+		font-size: 34px;
+
+	}
+
+	.content-title-paragraphe{
+
+		max-width: 500px;
+		margin: auto auto auto 180px;
+
+	}
+	
+}
+
+@media screen and(min-width: 1400px) {
+
+	.header-image{
+
+		width: 1000px;
+		height: 700px;
+
+	}
+
+	.content-title-paragraphe{
+
+		max-width: 500px;
+		margin: auto auto auto 246px;
+
+	}
+
+	.content-paragraphe-intro{
+
+		max-width: 500px;
+		margin: auto auto auto 246px;
+
+	}
+
+	.content-separe-title-paragraphe{
+
+		width: 75px;
+		height: 5px;
+		margin: 7px auto 36px 246px;
+
+	}
+
+	.content-main{
+
+		padding: 206px 0 0 0;
+
+	}
+	
+}
